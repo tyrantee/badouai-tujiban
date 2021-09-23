@@ -158,5 +158,5 @@ def predict(model_path, vocab_path, input_strings):
 
 if __name__ == "__main__":
     main()
-    test_strings = ["abvxee", "cxyjfg", "rxyzqg", "nlkdww"]
+    test_strings = ["abvxee", "cxyjfg", "rxyzqg", "nlkdkw"]
     predict("model.pth", "vocab.json", test_strings)
