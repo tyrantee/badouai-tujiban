@@ -60,7 +60,7 @@ def build_sample(vocab, sentence_length):
     #随机从字表选取sentence_length个字，可能重复
     x = [random.choice(list(vocab.keys())) for _ in range(sentence_length)]
     #指定哪些字出现时为正样本
-    if set("fyj") & set(x):
+    if set("xyz") & set(x):
         y = 1
     #指定字都未出现，则为负样本
     else:
@@ -158,5 +158,5 @@ def predict(model_path, vocab_path, input_strings):
 
 if __name__ == "__main__":
     main()
-    test_strings = ["abvfee", "cxyjfg", "rfyjqg", "nlkdww"]
+    test_strings = ["abvxee", "cxyjfg", "rxyzqg", "nlkdww"]
     predict("model.pth", "vocab.json", test_strings)
